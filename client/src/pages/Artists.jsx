@@ -38,25 +38,26 @@ function Artists() {
   }
 
   return (
-    <div>
-      <h1>Artists</h1>
-
+    <>
+      <h2>Artists</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Artist name"
-          value={form.name}
-          onChange={e => setForm({ name: e.target.value })}
-        />
-        <button type="submit">Add Artist</button>
-        {error && <span style={{ color: 'red' }}>{error}</span>}
+        <div className="grid">
+          <input
+            placeholder="Artist name"
+            value={form.name}
+            onChange={e => setForm({ name: e.target.value })}
+          />
+          <button type="submit">Add Artist</button>
+        </div>
+        {error && <small style={{ color: 'var(--pico-color-red-500)' }}>{error}</small>}
       </form>
 
-      <div>
+      <div className="grid">
         {artists.map(artist => (
           <ArtistCard key={artist.id} artist={artist} onEdit={handleEdit} />
         ))}
       </div>
-    </div>
+    </>
   )
 }
 

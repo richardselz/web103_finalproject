@@ -18,6 +18,7 @@ const createTables = `
     title VARCHAR(255) NOT NULL,
     artist_id INTEGER REFERENCES artists(id) ON DELETE CASCADE,
     year INTEGER,
+    image_url TEXT,
     created_at TIMESTAMP DEFAULT NOW()
   );
 

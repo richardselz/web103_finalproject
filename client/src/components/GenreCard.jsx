@@ -1,9 +1,11 @@
 function GenreCard({ genre, onDelete }) {
   return (
-    <div>
-      <h3>{genre.name}</h3>
-      <button onClick={() => onDelete(genre.id)}>Delete</button>
-    </div>
+    <article>
+      <header>{genre.name}</header>
+      <footer>
+        <button className="secondary" onClick={() => onDelete(genre.id)}>Delete</button>
+      </footer>
+    </article>
   )
 }
 

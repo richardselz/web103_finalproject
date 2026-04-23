@@ -10,20 +10,24 @@ function ArtistCard({ artist, onEdit }) {
   }
 
   return (
-    <div>
+    <article>
       {editing ? (
         <>
           <input value={name} onChange={e => setName(e.target.value)} />
-          <button onClick={handleSave}>Save</button>
-          <button onClick={() => setEditing(false)}>Cancel</button>
+          <footer style={{ display: 'flex', gap: '0.5rem' }}>
+            <button onClick={handleSave}>Save</button>
+            <button className="secondary" onClick={() => { setName(artist.name); setEditing(false) }}>Cancel</button>
+          </footer>
         </>
       ) : (
         <>
-          <h3>{artist.name}</h3>
-          <button onClick={() => setEditing(true)}>Edit</button>
+          <header>{artist.name}</header>
+          <footer>
+            <button className="outline" onClick={() => setEditing(true)}>Edit</button>
+          </footer>
         </>
       )}
-    </div>
+    </article>
   )
 }
 

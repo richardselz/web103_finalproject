@@ -34,25 +34,26 @@ function Genres() {
   }
 
   return (
-    <div>
-      <h1>Genres</h1>
-
+    <>
+      <h2>Genres</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Genre name"
-          value={form.name}
-          onChange={e => setForm({ name: e.target.value })}
-        />
-        <button type="submit">Add Genre</button>
-        {error && <span style={{ color: 'red' }}>{error}</span>}
+        <div className="grid">
+          <input
+            placeholder="Genre name"
+            value={form.name}
+            onChange={e => setForm({ name: e.target.value })}
+          />
+          <button type="submit">Add Genre</button>
+        </div>
+        {error && <small style={{ color: 'var(--pico-color-red-500)' }}>{error}</small>}
       </form>
 
-      <div>
+      <div className="grid">
         {genres.map(genre => (
           <GenreCard key={genre.id} genre={genre} onDelete={handleDelete} />
         ))}
       </div>
-    </div>
+    </>
   )
 }
 
