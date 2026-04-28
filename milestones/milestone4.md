@@ -21,11 +21,11 @@ Our group took advantage of in-class time to colaborate and complete a significa
 
 A challenge would be completing this project despite the limited time we're given.
 
-### Did you finish all of your tasks in your sprint plan for this week? If you did not finish all of the planned tasks, how would you prioritize the remaining tasks on your list?
+### 3. Did you finish all of your tasks in your sprint plan for this week? If you did not finish all of the planned tasks, how would you prioritize the remaining tasks on your list?
 
 Yes, we finished all our tasks in our sprint plan for this week.
 
-### Which features and user stories would you consider “at risk”? How will you change your plan if those items remain “at risk”?
+### 4. Which features and user stories would you consider “at risk”? How will you change your plan if those items remain “at risk”?
 
 We implemented all the required features and at least 2 custom features. Only optional stretch features are "at risk" and that's fine.
 
