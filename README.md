@@ -4,7 +4,7 @@ CodePath WEB103 Final Project
 
 Designed and developed by: Jonathan Hill, Jacob Solano, Semir Ali, Richard Selznick
 
-🔗 Link to deployed app:
+🔗 Link to deployed app: https://web103-finalproject-8i80.onrender.com
 
 ## About
 
