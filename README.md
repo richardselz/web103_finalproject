@@ -22,6 +22,9 @@ Frontend: React, React Router, Pico CSS
 
 Backend: Express, PostgreSQL, Node.js
 
+
+![Demo gif](/media/demo.gif)
+
 ## Features
 
 ### ✅ Add Artist
